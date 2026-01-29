@@ -30,6 +30,13 @@ Verify ffmpeg installation:
 ffmpeg -version
 ```
 
+> **Tip: Getting FFmpeg**
+> - **macOS**: `brew install ffmpeg`
+> - **Linux**: `apt install ffmpeg` or `dnf install ffmpeg`
+> - **Windows**: Download from [BtbN/FFmpeg-Builds](https://github.com/BtbN/FFmpeg-Builds/releases), e.g. `ffmpeg-n7.1-latest-win64-gpl-shared-7.1.zip`, extract and add `bin/` to `PATH`
+>
+> Alternatively, set `FFMPEG_PATH` environment variable to the ffmpeg executable path.
+
 ## Common Operations
 
 ### Extract Audio (Keep Original Format)

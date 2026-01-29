@@ -36,6 +36,9 @@ Markdown document
 
 ## Prerequisites
 
+> **Tip: Environment Setup**
+> - **uv**: See [uv installation](https://docs.astral.sh/uv/getting-started/installation/) for quickstart
+
 1. **ffmpeg** - For audio extraction
 2. **Python 3.12+** with uv package manager
 3. **CUDA GPU** (recommended) - For faster transcription
