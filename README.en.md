@@ -142,9 +142,3 @@ video2doc/
 │   └── ...
 └── README.md
 ```
-
-## Related Links
-
-- [Agent Skills Specification](https://agentskills.io/specification)
-- [VS Code Agent Skills](https://code.visualstudio.com/docs/copilot/customization/agent-skills)
-- [OpenAI Whisper](https://github.com/openai/whisper)
