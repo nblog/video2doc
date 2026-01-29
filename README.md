@@ -113,7 +113,7 @@ sequenceDiagram
     A->>T: run_in_terminal: ffmpeg 提取音频
     A->>T: run_in_terminal: whisper 转录
     A->>S: 读取 notion-knowledge-capture Skill
-    A->>T: tavily_search: 补充背景信息
+    A->>T: web_search: 补充背景信息
     A->>T: notion-create-pages: 创建知识页面
     A->>U: ✅ 完成，Notion 页面链接
 ```
@@ -142,7 +142,3 @@ video2doc/
 │   └── ...
 └── README.md
 ```
-
-## License
-
-MIT

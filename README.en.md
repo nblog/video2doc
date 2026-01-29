@@ -113,7 +113,7 @@ sequenceDiagram
     A->>T: run_in_terminal: ffmpeg extract audio
     A->>T: run_in_terminal: whisper transcribe
     A->>S: Read notion-knowledge-capture Skill
-    A->>T: tavily_search: supplement background info
+    A->>T: web_search: supplement background info
     A->>T: notion-create-pages: create knowledge page
     A->>U: ✅ Done, Notion page link
 ```
@@ -148,7 +148,3 @@ video2doc/
 - [Agent Skills Specification](https://agentskills.io/specification)
 - [VS Code Agent Skills](https://code.visualstudio.com/docs/copilot/customization/agent-skills)
 - [OpenAI Whisper](https://github.com/openai/whisper)
-
-## License
-
-MIT
