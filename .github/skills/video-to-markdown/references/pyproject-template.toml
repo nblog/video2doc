@@ -1,0 +1,27 @@
+# PyTorch CUDA Configuration for uv
+#
+# This template shows how to configure pyproject.toml to install
+# PyTorch with CUDA support using uv package manager.
+
+[project]
+name = "video2doc"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "openai-whisper>=20250625",
+    "torch>=2.0",
+]
+
+# Configure PyTorch CUDA index
+[[tool.uv.index]]
+name = "pytorch-cu126"
+url = "https://download.pytorch.org/whl/cu126"
+explicit = true
+
+# Source torch from CUDA index
+[tool.uv.sources]
+torch = { index = "pytorch-cu126" }
+
+# Note: After modifying this file, run:
+#   Remove-Item uv.lock -Force
+#   uv sync
