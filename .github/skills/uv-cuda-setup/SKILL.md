@@ -58,6 +58,7 @@ Match CUDA version to PyTorch index:
 - CUDA 12.1 → `cu121`
 - CUDA 12.4 → `cu124`
 - CUDA 12.6 → `cu126`
+- CUDA 13.0 → `cu130`
 
 ### Step 3: Configure pyproject.toml
 
@@ -132,3 +133,4 @@ torchaudio = { index = "pytorch-cu126" }
 | 12.1 | `https://download.pytorch.org/whl/cu121` |
 | 12.4 | `https://download.pytorch.org/whl/cu124` |
 | 12.6 | `https://download.pytorch.org/whl/cu126` |
+| 13.0 | `https://download.pytorch.org/whl/cu130` |
