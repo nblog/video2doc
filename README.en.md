@@ -22,7 +22,7 @@ flowchart LR
     end
 
     subgraph MCP["MCP Tools"]
-        T1[Deep Research]
+        T1[DeepResearch]
         T2[Notion]
     end
 
@@ -73,7 +73,7 @@ Transcribe video.mp4, integrate references, and archive to Notion
 AI will automatically:
 - Read `video-to-markdown` + `notion-knowledge-capture` Skills
 - Transcribe video content
-- Supplement with background research via Tavily
+- Supplement with background research via DeepResearch
 - Create structured Notion page
 
 #### Example 3: Fix CUDA Issues

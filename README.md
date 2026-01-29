@@ -22,7 +22,7 @@ flowchart LR
     end
 
     subgraph MCP["MCP Tools"]
-        T1[Deep Research]
+        T1[DeepResearch]
         T2[Notion]
     end
 
@@ -73,7 +73,7 @@ AI 会自动：
 AI 会自动：
 - 读取 `video-to-markdown` + `notion-knowledge-capture` Skills
 - 转录视频内容
-- 通过 Tavily 搜索补充背景信息
+- 通过 DeepResearch 再次搜索补充背景信息
 - 创建结构化 Notion 页面
 
 #### 示例 3：修复 CUDA 问题
