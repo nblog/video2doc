@@ -3,12 +3,14 @@ name: whisper-transcription
 description: |
   Uses OpenAI Whisper for speech-to-text transcription with GPU acceleration.
   Handles model selection, language detection, and timestamp extraction.
+  Includes post-processing for hotword correction (fixing misrecognized terms,
+  proper nouns, abbreviations, and technical jargon from ASR output).
   Use when transcribing audio/video files, extracting speech from media,
   or performing speech recognition tasks.
 compatibility: Requires Python 3.8+, ffmpeg, GPU recommended
 metadata:
   author: video2doc
-  version: "1.0"
+  version: "1.1"
 ---
 
 # Whisper Transcription
@@ -248,3 +250,17 @@ Generates:
 - `.srt` - SRT subtitles
 - `.tsv` - Tab-separated with timestamps
 - `.json` - Full result with all metadata
+
+## Post-Processing: Hotword Correction
+
+Whisper transcriptions often contain misrecognized terms, especially for:
+- Technical terminology and jargon
+- Proper nouns (names, brands, products)
+- Abbreviations and acronyms
+- Foreign words and loanwords
+
+After transcription, apply hotword correction to fix these errors while preserving the original meaning, tone, and structure.
+
+**When to apply**: After obtaining raw Whisper output, before final document generation.
+
+See [Hotword Correction Reference](references/HOTWORD-CORRECTION.md) for detailed correction guidelines and prompts.
