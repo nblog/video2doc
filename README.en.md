@@ -123,7 +123,7 @@ sequenceDiagram
 | Component | Description |
 |-----------|-------------|
 | VS Code | + GitHub Copilot or Claude Code |
-| Python 3.12+ | Managed by uv |
+| Python 3.10+ | Managed by uv |
 | FFmpeg | Audio extraction |
 | NVIDIA GPU | Optional, accelerate transcription |
 

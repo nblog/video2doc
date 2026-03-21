@@ -123,7 +123,7 @@ sequenceDiagram
 | 组件 | 说明 |
 |------|------|
 | VS Code | + GitHub Copilot 或 Claude Code |
-| Python 3.12+ | uv 自动管理 |
+| Python 3.10+ | uv 自动管理 |
 | FFmpeg | 音频提取 |
 | NVIDIA GPU | 可选，加速转录 |
 

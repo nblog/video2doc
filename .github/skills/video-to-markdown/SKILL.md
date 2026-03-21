@@ -5,7 +5,7 @@ description: |
   Extracts audio with ffmpeg, transcribes with OpenAI Whisper, and generates structured Markdown
   with timestamps. Use when user wants to transcribe video, convert video to text, generate
   video transcript, or create documentation from video content.
-compatibility: Requires ffmpeg, Python 3.12+, CUDA GPU recommended for faster processing
+compatibility: Requires ffmpeg, Python 3, CUDA GPU recommended for faster processing
 metadata:
   author: video2doc
   version: "1.0"
@@ -40,7 +40,7 @@ Markdown document
 > - **uv**: See [uv installation](https://docs.astral.sh/uv/getting-started/installation/#standalone-installer) for quickstart
 
 1. **ffmpeg** - For audio extraction
-2. **Python 3.12+** with uv package manager
+2. **Python 3** with uv package manager
 3. **CUDA GPU** (recommended) - For faster transcription
 4. **openai-whisper** package
 
@@ -60,14 +60,12 @@ nvidia-smi --query-gpu=name,memory.total --format=csv
 
 ```bash
 # Initialize uv project
-uv init --python 3.12
+uv init
 
 # Install whisper with CUDA support
 # Configure pyproject.toml with pytorch-cu126 index
 uv add openai-whisper torch
 ```
-
-See [pyproject.toml template](references/pyproject-template.toml) for CUDA configuration.
 
 ### 3. Run Conversion
 
