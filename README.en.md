@@ -48,7 +48,15 @@ flowchart LR
 git clone https://github.com/nblog/video2doc.git && cd video2doc
 ```
 
-### 2. Let AI Do the Work
+### 2. Install Dependencies
+
+Use apm to manage project dependencies and plugins:
+
+```bash
+uv tool run --from git+https://github.com/microsoft/apm.git apm install
+```
+
+### 3. Let AI Do the Work
 
 Open the project in VS Code with GitHub Copilot / Claude Code, and simply tell it what you want:
 

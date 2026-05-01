@@ -48,7 +48,15 @@ flowchart LR
 git clone https://github.com/nblog/video2doc.git && cd video2doc
 ```
 
-### 2. 让 AI 开始工作
+### 2. 安装依赖
+
+使用 apm 管理项目依赖和插件：
+
+```bash
+uv tool run --from git+https://github.com/microsoft/apm.git apm install
+```
+
+### 3. 让 AI 开始工作
 
 在 VS Code 中打开项目，使用 GitHub Copilot / Claude Code，直接告诉它你要做什么：
 
