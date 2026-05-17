@@ -45,7 +45,7 @@ flowchart LR
 ### 1. Clone the Project
 
 ```bash
-git clone https://github.com/nblog/video2doc.git && cd video2doc
+git clone https://github.com/nblog/video2doc && cd video2doc
 ```
 
 ### 2. Install Dependencies
@@ -53,7 +53,7 @@ git clone https://github.com/nblog/video2doc.git && cd video2doc
 Use apm to manage project dependencies and plugins:
 
 ```bash
-uv tool run --from git+https://github.com/microsoft/apm.git apm install
+uv tool run --from git+https://github.com/microsoft/apm apm install
 ```
 
 ### 3. Let AI Do the Work

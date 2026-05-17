@@ -45,7 +45,7 @@ flowchart LR
 ### 1. 克隆项目
 
 ```bash
-git clone https://github.com/nblog/video2doc.git && cd video2doc
+git clone https://github.com/nblog/video2doc && cd video2doc
 ```
 
 ### 2. 安装依赖
@@ -53,7 +53,7 @@ git clone https://github.com/nblog/video2doc.git && cd video2doc
 使用 apm 管理项目依赖和插件：
 
 ```bash
-uv tool run --from git+https://github.com/microsoft/apm.git apm install
+uv tool run --from git+https://github.com/microsoft/apm apm install
 ```
 
 ### 3. 让 AI 开始工作

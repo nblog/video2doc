@@ -4,6 +4,12 @@ description: APM project for video2doc
 author: nblog
 dependencies:
   apm: 
-    - openai/plugins/plugins/notion
-  mcp: []
+    - openai/skills/skills/.curated/notion-knowledge-capture
+    - openai/skills/skills/.curated/notion-meeting-intelligence
+    - openai/skills/skills/.curated/notion-research-documentation
+    - openai/skills/skills/.curated/notion-spec-to-implementation
+  mcp:
+    notion:
+      type: http
+      url: https://mcp.notion.com/mcp
 scripts: {}
